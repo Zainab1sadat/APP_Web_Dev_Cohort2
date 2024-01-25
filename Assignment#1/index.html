@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- main section  -->
+  <div class="header">
+    <h1>Beautiful <span> Afghanistan</span></h1>
+  </div>
+  <!-- Top images -->
+  <div class="top">
+    <div class="images">
+      <img src="images/pic_1.jpg" alt="Kind people" id="img_1" />
+    </div>
+    <div class="images">
+      <img src="images/pic_2.jpg" alt="Nice Reivers" id="img_2" />
+    </div>
+    <div class="images">
+      <img src="images/pic_4.jpg" alt="Big Mountains" id="img_3" />
+    </div>
+    <div class="images">
+      <img src="images/pic_3.jpg" alt="Great Weather" id="img_4" />
+    </div>
+  </div>
+  <!-- end of top images -->
+  <!-- main center div  -->
+  <div class="main_image">
+    <img src="images/pic_1.jpg" alt="image" id="main_image">
+    <div class="caption">
+      <span>Kind people</span>
+    </div>
+  </div>
+  <!--end of main center div  -->
+
+  <!-- end section  -->
+
+  <!-- Js code for changing images and captions -->
+  <script>
+    // select first image with using it's id
+    document.querySelector("#img_1").onclick = function () {
+      // selecting main center image and using .src to change its image src
+      document.querySelector("#main_image").src = 'images/pic_1.jpg';
+      // selecting (alt attribute) that describes that image save it in a variable (x)
+      var x = document.querySelector("#img_1").alt;
+      // selecting the main center image caption and change it with (alt attribute) that describes that image
+      document.querySelector(".caption").innerHTML = x;
+    }
+    // select second image with using it's id
+    document.querySelector("#img_2").onclick = function () {
+      // selecting main center image and using .src to change its image src
+      document.querySelector("#main_image").src = 'images/pic_2.jpg';
+      // selecting (alt attribute) that describes that image save it in a variable (x)
+      var x = document.querySelector("#img_2").alt;
+      // selecting the main center image caption and change it with (alt attribute) that describes that image
+      document.querySelector(".caption").innerHTML = x;
+    }
+    // select third image with using it's id
+    document.querySelector("#img_3").onclick = function () {
+      // selecting main center image and using .src to change its image src
+      document.querySelector("#main_image").src = 'images/pic_4.jpg';
+      // selecting (alt attribute) that describes that image save it in a variable (x)
+      var x = document.querySelector("#img_3").alt;
+      // selecting the main center image caption and change it with (alt attribute) that describes that image
+      document.querySelector(".caption").innerHTML = x;
+    }
+    // select fourth image with using it's id
+    document.querySelector("#img_4").onclick = function () {
+      // selecting main center image and using .src to change its image src
+      document.querySelector("#main_image").src = 'images/pic_3.jpg';
+      // selecting (alt attribute) that describes that image save it in a variable (x)
+      var x = document.querySelector("#img_4").alt;
+      // selecting the main center image caption and change it with (alt attribute) that describes that image
+      document.querySelector(".caption").innerHTML = x;
+    }
+  </script>
+
+</body>
+
+</html>

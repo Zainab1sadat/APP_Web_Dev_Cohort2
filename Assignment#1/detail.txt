@@ -1,0 +1,41 @@
+Requirements
+On your computer Desktop, create a new folder named APP-Web2-Assignment01. 
+
+Open this folder in VS Code.
+
+Using VS Code, in this folder, create a new HTML file named index.html and a CSS file named styles.css. Link the CSS file into HTML file.
+
+Write HTML and CSS to create a photo gallery with at least four (4) thumbnails and one (1) main image.
+
+Place the four thumbnails on the top of the page, next to each other. Hint: use CSS flexbox to make the images go next to each other.
+
+Place the main image below the thumbnails. It should be bigger than the thumbnails. 
+
+By default, the main image is the same as one of the thumbnails. Display a caption for the main image below the image.
+
+The main image should be inside a <div>. Add a background color to this <div>.
+
+Each image must have alternative text (alt attribute) that describes that image.
+
+In the styles.css file, write CSS so that when a user hovers over a thumbnail, the thumbnail's opacity CSS property is reduced.
+
+At the bottom of the HTML file, write a <script> tag where you will write JavaScript to do the following:
+
+When a user clicks a thumbnail:
+
+Update the main image to the thumbnail image that was just clicked on.
+
+Update the main image alternative text (alt attribute) to the thumbnail image that was just clicked on.
+
+Update the main image caption to match the thumbnail image that was just clicked on.
+
+Check your HTML, CSS, and JS code in the validator. You can use these validators below OR use a VS Code extension to validate your code.
+
+HTML validator: https://validator.w3.org/#validate_by_input 
+
+CSS validator: https://jigsaw.w3.org/css-validator/#validate_by_input 
+
+JS validator: https://codebeautify.org/jsvalidate 
+
+Submit your code by copy-pasting your code into this Edstem submission.
+ 
