@@ -1,0 +1,11 @@
+Write HTML and CSS to create a photo gallery with at least four (4) thumbnails and one (1) main image.
+Place the main image below the thumbnails. It should be bigger than the thumbnails. 
+By default, the main image is the same as one of the thumbnails. Display a caption for the main image below the image.
+
+At the bottom of the HTML file, write a <script> tag where you will write JavaScript to do the following:
+When a user clicks a thumbnail:
+Update the main image to the thumbnail image that was just clicked on.
+Update the main image alternative text (alt attribute) to the thumbnail image that was just clicked on.
+Update the main image caption to match the thumbnail image that was just clicked on.
+
+ 
