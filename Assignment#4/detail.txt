@@ -1,4 +1,3 @@
-
 At the top of the main.js file, create an array named bgColors and add at least ten (10) hex colors. Each hex color is a string. It will be an array of strings. Tip: you can obtain HTML hex color strings from https://htmlcolorcodes.com/. 
 
 Below the bgColors array, create an array named meals and add at least six (6) meals. Each meal is an object that has the following properties:
