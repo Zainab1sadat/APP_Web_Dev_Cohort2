@@ -1,0 +1,25 @@
+Write HTML and CSS to create three products on the page. Each product must have:
+
+product image,
+
+product name,
+
+product price as an integer.
+
+price needs to have a currency symbol, for example $10.
+
+each product needs to have a different price.
+
+Write HTML to show the Cart Subtotal listed with a starting balance of $0 (it needs to have the $ currency symbol).
+
+In the styles.css file, write CSS so that when a user hovers over a product, the product's opacity CSS property is reduced.
+
+Write CSS to display the three products next to each other. Use CSS flexbox properties to achieve this layout.
+
+Before writing any JavaScript, write out workflow in the comments. 
+
+You must have comments throughout your code.
+
+When a user clicks on a product, update the subtotal by adding the corresponding product's price.
+
+Users need to be able to click on each product multiple times and see the subtotal update accordingly.

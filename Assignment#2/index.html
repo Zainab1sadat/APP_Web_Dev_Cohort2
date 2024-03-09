@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <section class="header">
+        <h1>Products</h1>
+    </section>
+    <!-- main section -->
+    <p id="total">Total price: <span id="total_price">0</span>$</p>
+    <section class="main">
+        <div class="main_div">
+            <div>
+                <img src="images/portfolio-1.jpg" alt="" id="img_1">
+                <div class="content">
+                    <span id="product_name_1">ONNE</span>
+                    <span id="product_price_1">50<span>$</span> </span>
+                </div>
+            </div>
+            <div>
+                <img src="images/portfolio-5.jpg" alt="" id="img_2">
+                <div class="content">
+                    <span id="product_name_2">AERIN</span>
+                    <span id="product_price_2">100<span>$</span></span>
+                </div>
+
+            </div>
+            <div>
+                <img src="images/portfolio-6.jpg" alt="" id="img_3">
+                <div class="content">
+                    <span id="product_name_3">COCOOIL</span>
+                    <span id="product_price_3">120<span>$</span></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+        <footer>
+            <h4>Designed by Zainab Sadat</h4>
+        </footer>
+    </section>
+    <!-- Javascript codes -->
+    <script>
+        // select item 1 when click it
+        document.querySelector("#img_1").onclick = function(){
+            // select the first item's price and convert it to a number
+            let price = parseInt(document.querySelector("#product_price_1").textContent);
+            // select the total_price and convert it to a number
+            let total_price = parseInt(document.querySelector("#total_price").textContent);
+            // add total_price and the first item's price and assign them in a variable(total)
+            let total = total_price + price;
+            // update the total_price 
+            document.querySelector("#total_price").textContent=total; 
+
+        }
+        // select item 2 when click it
+        document.querySelector("#img_2").onclick = function(){
+            // select the second item's price and convert it to a number           
+            let price = parseInt(document.querySelector("#product_price_2").textContent);
+            // select the total_price and convert it to a number
+            let total_price = parseInt(document.querySelector("#total_price").textContent);
+            // add total_price and the second item's price and assign them in a variable(total)
+            total = total_price + price;
+            // update the total_price 
+            document.querySelector("#total_price").textContent=total; 
+        }
+        // select item 3 when click it
+        document.querySelector("#img_3").onclick = function(){
+            // select the third item's price and convert it to a number           
+            let price = parseInt(document.querySelector("#product_price_3").textContent);
+            // select the total_price and convert it to a number
+            let total_price = parseInt(document.querySelector("#total_price").textContent);
+            // add total_price and the third item's price and assign them in a variable(total)
+            total = total_price + price;
+            // update the total_price 
+            document.querySelector("#total_price").textContent=total; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+
+At the top of the main.js file, create an array named bgColors and add at least ten (10) hex colors. Each hex color is a string. It will be an array of strings. Tip: you can obtain HTML hex color strings from https://htmlcolorcodes.com/. 
+
+Below the bgColors array, create an array named meals and add at least six (6) meals. Each meal is an object that has the following properties:
+
+name - the name of the meal (e.g. Pizza)
+
+src - the path to the image (e.g. pizza.jpeg or https://images.com/pizza) Tip: you can download images from https://unspalsh.com/ 
+
+price - the price of the meal as an integer (e.g. 10 )
+
+Below the meals array, create a variable wallet that holds an integer of 100. This will be the starting value of the user's Wallet.
+
+Below the wallet variable, declare a function named generateRandomNumber.
+
+Parameter: max 
+
+At the beginning of this function, log out "Running generateRandomNumber function" message in the console.
+
+Write code so that a random integer is generated. The parameter max is the maximum number the random integer can be.
+
+Log out the random integer in the console.
+
+Return value: randomFinalNum. 
+
+Use this function to generate the random background color and three meals.
+
+Declare a function named generateBackgroundColor.
+
+Parameter: none.
+
+At the beginning of this function, log out "Running generateBackgroundColor function" message in the console.
+
+Write code so that a random number is generated. Call the generateRandomNumber function.
+
+Use the random number to choose a random color from the bgColors array. Use this color to set the background color of the browser.
+
+Log out the calculated total in the console.
+
+Return value: none.
+
+This function will be called every time you want to generate a random background color.
+
+Now is a good time to test that the above functions are working. The first thing to try is generating a random background color upon refreshing the page. Below all the function declarations, call the generateBackgroundColor() function to check that the background color changes as it should. Refreshing the page will call the function again, so refresh the page a few times to check that the background color changes every time you press refresh.
+
+If this is not working, try opening the Console to see if there are any errors.
+
+Next, let's work on randomly generating the three meals. Call a function named generateMeals() right after calling generateBackgroundColor(). Use this to check that generateMeals() is working, as defined in the next step.
+
+Declare a function named generateMeals.
+
+Parameter: none.
+
+At the beginning of this function, log out "Running generateMeals function" message in the console.
+
+Write code so that this function will do the following:
+
+Three (3) random numbers are generated. You can call the generateRandomNumber function for this. Save the random numbers in its own variable. Console log out the random numbers to help you debug.
+
+Populate the first meal using the first randomly generated number using querySelector(). Change the first meal's image, name, and price. Hint: remember that querySelector() can take combinator CSS selectors. For example, it can get a <h2> tag inside a <div> by calling document.querySelector("div h2").
+
+Refresh the page to see that the first meal is populated correctly. Once the first meal works as intended, populate the other two meals.
+
+Refresh the page a few times to make sure that all three meals are randomly generated. It is OK if duplicate meals are shown.
+
+Call a function named calculateBill() which is defined in the next step.
+
+Declare a function named calculateBill .
+
+Parameter: none.
+
+At the beginning of this function, log out "Running calculateBill function" message in the console.
+
+Write code so that it grabs the prices of the three currently displayed meals. Then, add the prices together to display the final total where it says "Total" on the page.
+
+Refresh the page a few times to make sure that at this point, three meals are randomly generated AND the Total is calculated and displayed correctly.
+
+Write an event listener for the "Generate Meals" (blue) button so that when this button is clicked, the generateMeals function is called. Click this button a few times to test that three meals are generated every time the button is clicked.
+
+Now let's start working on purchasing. First, we need to set the default amount of money the user starts with. We had declared a variable named wallet early on. Upon page load, show this value next to the text "Wallet" on the page. 
+
+Write an event listener for the "Purchase All Meals" (green) button so that when this button is clicked, the purchase function is called with the total value passed in. You should grab the total value from the browser before passing it into the purchase function. The purchase function will be defined in the next step.
+
+Below where calculateBill function is declared, declare a function named purchase.
+
+Parameter: total.
+
+At the beginning of this function, log out "Running purchase function" message in the console.
+
+No return value.
+
+Write code that does the following:
+
+Check that the user has enough funds in their Wallet to make the purchase. 
+
+If the user has enough funds to purchase, subtract the param total amount from Wallet and display the updated wallet amount, show the success message, generate three more meals, and generate a new background color.
+
+To show the success message, remove a CSS class name invisible to the div that contains the success message.
+
+If the user does not have enough funds in their Wallet to make the purchase, show an alert message that says "Sorry, you cannot purchase the meals!" and hide the success message. To hide the success message, add a CSS class name invisible to the div that contains the success message.
+
+Finally, let's add a feature where a user can add funds into their wallet. Start by writing an event listener for the "Add Funds to Wallet" (yellow) button so that when the button is clicked, write code so that a popup dialog shows up asking the user "How much funds would you like to put in?". 
+
+In the event listener, call the addFunds function and pass in the user's response as an argument. The addFunds function will be defined in the next step.
+
+Below where purchase function is declared, declare a function named addFunds.
+
+Parameter: funds.
+
+At the beginning of this function, log out "Running purchase function" message in the console.
+
+No return value.
+
+Write code that does the following:
+
+Add the given funds parameter to the wallet variable that was declared at the top of the file. 
+
+Log out the wallet variable in the console to check that wallet has been updated correctly.
+
+Display the updated wallet value to the browser, next to "Wallet:".
+
+To start over, refresh the page.
+
+To help you write your code, always have the Console open and check for any errors. Also, use console.log() frequently to log out messages to see what your code is doing.
+
+Check your HTML, CSS, and JS code in the validator. You can use these validators below OR use a VS Code extension to validate your code.
+
+HTML validator: https://validator.w3.org/#validate_by_input 
+
+CSS validator: https://jigsaw.w3.org/css-validator/#validate_by_input 
+
+JS validator: https://jshint.com/ 
+
+Submit your code by copy-pasting your code into this Edstem submission.

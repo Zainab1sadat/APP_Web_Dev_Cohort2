@@ -1,0 +1,86 @@
+General Requirements
+Every time users click on a product, the cart subtotal, cart tax, and cart total must be updated accordingly.  
+
+The subtotal, tax, and total must start at $0. 
+
+The tax is 8.75% of the subtotal.
+
+The total is the subtotal plus the tax.
+
+You must create and use functions as described in the below requirements.
+
+Step-by-step Requirements
+On your computer Desktop, create a new folder named APP-Web2-Assignment03. 
+
+Open this folder in VS Code.
+
+Using VS Code, in this folder, create a new HTML file named index.html , a CSS file named styles.css , and a JS file named main.js. Link the CSS file and JS file into the HTML file.
+
+Copy and paste the HTML and CSS files from Assignment #02 to show the same header, three products, and footer. Each product must have a name and price as they did in Assignment #02.
+
+Next to "Cart Subtotal", add Cart Tax: $0 Cart Total $0. The $ amounts for Tax and Total will be updated, so wrap a <span> tag or similar around the $ amounts so that you can grab the element and update the amounts later.
+
+Move all the JavaScript code into main.js file. There must not be any JavaScript code in index.html. Write all JavaScript in the main.js file.
+
+All function declarations must be at the top of the file.
+
+Declare a function named calculateTax.
+
+Parameter: subtotal
+
+At the beginning of this function, log out "Running calculateTax function" message in the console.
+
+Write code so that the tax is calculated based on the subtotal that is given as the parameter. The tax rate is 8.75%. Don't round any decimals yet at this point.
+
+Log out the calculated tax in the console.
+
+Return value: tax . The calculated tax amount. 
+
+This function is called in the order function.
+
+Declare a function named calculateTotal. 
+
+Two parameters: subtotal and tax.
+
+At the beginning of this function, log out "Running calculateTotal function" message in the console.
+
+Write code so that the total is calculated based on the subtotal and tax that is given as the parameters. Don't round any decimals yet at this point.
+
+Log out the calculated total in the console.
+
+Return value: total. The calculated total amount.
+
+This function is called in the order function.
+
+Declare a function named order. 
+
+Parameter: cost 
+
+At the beginning of this function, log out "Running order function" message in the console.
+
+This function is called when a user clicks on any of the products. The cost of the product that the user clicks on is the cost parameter.
+
+Write code so that this function will do the following:
+
+Get the current cart subtotal and save it into a variable.
+
+Add the cost of the product that was clicked on to the current subtotal.
+
+Log out the updated subtotal into the console.
+
+Call the calculateTax function and pass in the subtotal as the argument. Save the returned tax value into a variable.
+
+Call the calculateTotal function and pass in the subtotal and the tax (which was calculated in the step above) as the arguments. Save the returned total into a variable.
+
+Finally, display all the updated values. Cart Subtotal must show the subtotal, Car Tax must show the tax, and Cart Total must show the total. Round the tax and total values into two decimals before displaying them.
+
+Each product must have an onclick event registered to it, like in Assignment #02. However, remove all the code in the function() and only call the order() function with the product cost passed into it.
+
+
+For example:
+document.querySelector("#item1").onclick = function() {
+    order(85); // 85 is the cost of #item1
+}
+
+
+To help you write your code, always have the Console open and check for any errors. Also, use console.log() frequently to log out messages to see what your code is doing.
