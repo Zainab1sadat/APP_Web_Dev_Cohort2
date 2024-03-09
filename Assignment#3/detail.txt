@@ -1,6 +1,7 @@
 General Requirements
 Every time users click on a product, the cart subtotal, cart tax, and cart total must be updated accordingly.  
 
+
 The subtotal, tax, and total must start at $0. 
 
 The tax is 8.75% of the subtotal.
