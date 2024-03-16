@@ -1,0 +1,97 @@
+The list is contained in a div that has a solid background color of your choice, some shadow, and rounded corners. The exact width of this div does not matter, as long as it is a little less wider than the browser. Horizontally center this div.
+
+A heading at the top, for example, "Grocery List". (You can choose a list of your own choosing. It does not need to be a grocery list). 
+
+Before the heading, an icon of your choice. Tailwind provides SVG icons at: https://heroicons.com/outline. 
+
+The heading and icon have a color other than black.
+
+Below the heading, a form tag that contains:
+
+A text input, a dropdown, and a button that are horizontally next to each other.
+
+The text input must have a placeholder text.
+
+The text input must have a border with a color of your choice.
+
+Fill the dropdown so that it has at least three options. The dropdown options should be a category or something related to the theme of your list.
+
+The dropdown must have a blank option by default.
+
+The dropdown must have a border with a color of your choice.
+
+The button must be have a type="submit" attribute.
+
+The button must have a background color.
+
+Below the form, create a div. Inside this div, create an unordered list ul. Give the ul an id of list-items. 
+
+In the ul, add three li tags. Each list item will be in a li tag.
+
+In each li tag:
+
+Create a span tag that contains an emoji. The example uses the right arrow (➡️) emoji. You can choose which emoji you want to use. 
+
+Next to the emoji span tag, write some text for the list item. In the example, it is "Apples". This text does not need to be in any tag.
+
+Next to the text, create another span tag. This will contain what the user chose in the dropdown. This span tag must have a background color and rounded corners. In the example, it is "fruit", "dairy", and "grain". Each dropdown option must have a unique color. In the example, "fruit" is pink, "dairy" is green, and "grain" is yellow.
+
+Add a bottom border for each li tag to create a division between each list item.
+
+Make sure all HTML is valid. Use the validator to check: https://validator.w3.org/#validate_by_input 
+
+Add list item (JavaScript)
+
+Write all JavaScript in the main.js file. Add the script tag to the index.html file to link these files together.
+
+Write an event listener for the "Add" button so that when it is clicked, the add() function is called.
+ 
+Declare a function named add.
+
+At the beginning of this function, log out "Running add function" message in the console.
+
+Write code that stores the values of the text input and dropdown, then creates a list item. The newly created list item must look exactly like the ones that exist.
+
+The labels in the list item must have the same colors (in the example, fruit is always pink, dairy is always green, etc).
+
+Clear the user input and dropdown after the list item has been added.
+
+After successfully adding an item, add code to validate the user input.
+
+Input Validation
+
+Now let's add some code to check that the user entered valid text and chose a dropdown option.
+
+Declare a function named isValidated.
+
+At the beginning of this function, log out "Running isValidated function" message in the console.
+
+Create a variable named isValid and set it to false.
+
+Store the user input (text and dropdown).
+
+Write code to check that the text input has at least one character and that a dropdown option is chosen. 
+
+Add a red color border around the text input if text input is empty.
+
+Add a red color border around the dropdown option is no option is chosen.
+
+If text input and dropdown option is valid, set the isValid variable to true.
+
+Return the isValid variable.
+
+Modify the add function to call the isValidated function. isValidated will return true or false, so you can call this function in an if statement to check if inputs are valid. If so, you can add the list item as you have written before.
+For example,
+
+if (isValidated()) {
+    // the code to add the list item
+}
+else {
+    // inputs are not valid
+}
+
+If inputs are not valid, log out "Invalid inputs" in the console.
+
+That is it for now. If you want to continue the rest of the final project, you may do so.
+
+Submit your code by copy-pasting your code into this Edstem submission.
